@@ -1,3 +1,5 @@
-# Survey_Form
+# Customer Survey Form
 
-Below is a screen shot of a Survey Form I created using HTML & CSS for Barrier Island Adventures
+I recently had the opportunity to use my HTML and CSS skills to create a customer survey form for [Barrier Island Adventures & Sailing.](http://barrierislandadventures.com/) It was an exciting project, as I was able to use my creativity to design a form that was visually appealing and easy to use. I started by gathering all the necessary information from the company about the survey questions and the required input fields. I then used HTML to structure the form and CSS to add styling and make it look visually appealing. I added some simple validation to ensure that users fill out all required fields before submitting the form. It was a fun and rewarding experience, and I'm proud of the final product I was able to deliver to the client.
+
+![Survey_picture](https://user-images.githubusercontent.com/107579508/219433143-b29cb070-9d00-419f-be36-d894f20f0689.png)
