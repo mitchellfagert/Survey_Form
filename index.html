@@ -6,67 +6,71 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1 id='title'>Barrier Island Adventures & Sailing Survey Form</h1>
-  <p id="description">Please fill out this form with the required information</p>
-  <form id="survey-form">
-    <div>
-      <label id="name-label" for="name">Name</label>
-      <input type="text" name="name" placeholder="Enter your name" required>
-    </div>
-    <div>
-      <label id="email-label" for="email">Email</label>
-      <input type="email" name="email" id="email" placeholder="Enter your Email" required>
-    </div>
-    <div>
-      <p>Which tour did you book?
-        <span class="clue">(Check all that apply)</span>
-      </p>
+  <div class="container">
+    <header class="header">
+      <h1 id='title'>Barrier Island Adventures & Sailing Survey Form</h1>
+      <p id="description">Please fill out this form with the required information</p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required>
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number">How would you rate your overal experience on a scale of 1-5? (1="Dissapointing", 5="Amazing")
+          <input type="number" name="rating" id="number" min="1" max="5" class="form-control" placeholder="Rating">
+      </div>
+      <div class="form-group">
+        <p>Would you reccomend Barrier Island Adventures & Sailing to a friend?</p>
         <label>
-          <input name="prefer" value="Sunset Booze Cruise" type="checkbox" class="input-checkbox">Sunset Booze Cruise</input>
+          <input name="user-recommend" value="definitely" type="radio" class="input-radio">
+          Definitely
         </label>
         <label>
-          <input name="prefer" value="Dine at Harbortown/Daufuskie" type="checkbox" class="input-checkbox">Dine at Harbortown/Daufuskie</input>
+          <input name="user-recommend" value="maybe" type="radio" class="input-radio">Maybe
         </label>
         <label>
-          <input name="prefer" value="Dolphin Sightseeing" type="checkbox" class="input-checkbox">Dolphin Sightseeing</input>
+          <input name="user-recommend" value="not-sure" type="radio" class="input-radio">Not sure
         </label>
-        <label>
-          <input name="prefer" value="Explore Uninhabited Beaches" type="checkbox" class="input-checkbox"> Explore Uninhabited Beaches</input>
-        </label>
-    </div>
-    <div>
-      <label id="number-label" for="number">How would you rate your overal experience on a scale of 1-5? (1="Dissapointing", 5="Amazing")
-      <input type="number" name="rating" id="number" min="1" max="5" placeholder="Rating"
-    </div>
-    <div>
-      <p>Would you reccomend Barrier Island Adventures & Sailing to a friend?</p>
-      <label>
-        <input name="user-recommend" value="definitely" type="radio" class="input-radio">
-        Definitely
-      </label>
-      <label>
-        <input name="user-recommend" value="maybe" type="radio" class="input-radio">Maybe
-      </label>
-      <label>
-        <input name="user-recommend" value="not-sure" type="radio" class="input-radio">Not sure
-      </label>
-    </div>
-    <div>
-      <p>How did you hear about Barrier Island Adventures & Sailing?</p>
-      <select id="dropdown" name="source" class="form-control" required>
-        <option disabled selected value>Select option</option>
-        <option value="Airbnb">Airbnb</option>
-        <option value="website">Barrier Island Adventures & Sailing Website</option>
-        <option value="referral">Referred by a friend</option>
-      </select>
-    </div>
-    <div>
-      <p>Any comments or suggestions?</p>
-      <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
-    </div>
-    <div>
-      <button type="submit" id="submit" class="submit-button"> Submit </button>
-    </div>
-  </form>
+      </div>
+      <div class="form-group">
+        <p>How did you hear about Barrier Island Adventures & Sailing?</p>
+        <select id="dropdown" name="source" class="form-control" required>
+          <option disabled selected value>Select option</option>
+          <option value="Airbnb">Airbnb</option>
+          <option value="website">Barrier Island Adventures & Sailing Website</option>
+          <option value="referral">Referred by a friend</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>Which tour did you book?
+          <span class="clue">(Check all that apply)</span>
+        </p>
+          <label>
+            <input name="prefer" value="Sunset Booze Cruise" type="checkbox" class="input-checkbox">Sunset Booze Cruise</input>
+          </label>
+          <label>
+            <input name="prefer" value="Dine at Harbortown/Daufuskie" type="checkbox" class="input-checkbox">Dine at Harbortown/Daufuskie</input>
+          </label>
+          <label>
+            <input name="prefer" value="Dolphin Sightseeing" type="checkbox" class="input-checkbox">Dolphin Sightseeing</input>
+          </label>
+          <label>
+            <input name="prefer" value="Explore Uninhabited Beaches" type="checkbox" class="input-checkbox"> Explore Uninhabited Beaches</input>
+          </label>
+      </div>
+      <div class="form-group">
+        <p>Any comments or suggestions?</p>
+        <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button"> Submit </button>
+      </div>
+    </form>
+  </div>
 </body>
 </html>
